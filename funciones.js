@@ -1,6 +1,9 @@
 var contador = 0;
 
 function cargarDependencias() {
+    //Este es el vector donde se guardan cada una de las dependencias que le pongamos
+    //En la primera posicion de cada subvector se aguarda el numero que le corresponde a cada dependencia
+    //y en la segunda posicion se guarda el nombre correspondiente.
     var array = [ [1,"Decanatura"], [4,"Ingenieria de Sistemas"], [5,"Ingenieria Electronica"] ];
     agregarOpciones("dependencias", array);
     
