@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            GESTION DE CODIGOS DE DOCUMENTOS
+        </title>
+        <script src="funciones.js"></script>
+    </head>
+    <body onLoad="cargarDependencias(), ocultarBoton()">
+        <p>Seleccione dependencia</p>
+        <div>
+            <select name="dependencias" id="dependencias" onchange="cargarSubDependencias();">
+                    <option value="">Seleccione Dependencia</option>
+            </select>
+         </div>
+
+        
+        <div>
+            <p>Seleccione Sub Dependencia: </p>
+            <select name="subDependencias" id="subDependencias" onchange="mostrarBoton();">
+                    <option value="">Seleccione Dependencia Primero</option>                
+            </select>
+         </div>
+         <div>
+         <!-- Creo que esto no era necesario
+            <p>Ingrese Nombre del Archivo:</p>
+            <input type="text" name="nombreArchivo" id="nombreArchivo">
+        -->
+            <button type="button" onclick="mostrarNombre()" id ="boton1" hidden=true>GENERAR CODIGO</button>
+         </div>
+         <h1>Nombre del Archivo:</h1>
+         <p id="resultado">NO SE HA EJECUTADO</p>
+    
+    </body>
+
+    
+</html>
