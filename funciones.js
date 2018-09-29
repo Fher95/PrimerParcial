@@ -1,3 +1,5 @@
+//Variable que guarda el numero del documento en el que va.
+//Creo que cada dependencia tiene su propio contador (creo).
 var contador = 0;
 
 function cargarDependencias() {
@@ -55,6 +57,6 @@ function mostrarNombre(){
     var result=document.getElementById("resultado")
     var numDependencia = document.getElementById("dependencias").value;
     var numSubDependencia = document.getElementById("subDependencias").value;
-    result.innerHTML=numDependencia+"."+numSubDependencia+"."+contador;
+    result.innerHTML="8."+numDependencia+"."+numSubDependencia+"/"+contador;
     contador=contador+1;
 }
