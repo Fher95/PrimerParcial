@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GESTION DE CODIGOS DE DOCUMENTOS
+        </title>
+        <script src="funciones.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body onLoad="cargarDependencias(), ocultarBoton()">
+            <div class = "imagenFondo">
+            </div>
+            <header>GESTION DE DEPENDENCIAS</header>
+            <div class ="principal">
+                <p>Seleccione dependencia</p>
+                <div>
+                    <select name="dependencias" id="dependencias" class="listbox" onchange="cargarSubDependencias();">
+                            <option value="">Seleccione Dependencia</option>
+                    </select>
+                </div>
+
+                
+                <div>
+                    <p>Seleccione Sub Dependencia: </p>
+                    <select name="subDependencias" id="subDependencias" class="listbox" onchange="mostrarBoton();">
+                            <option value="">Seleccione Dependencia Primero</option>                
+                    </select>
+                </div>
+                <div>
+                <!-- Creo que esto no era necesario
+                    <p>Ingrese Nombre del Archivo:</p>
+                    <input type="text" name="nombreArchivo" id="nombreArchivo">
+                -->
+                <button type="button" onclick="mostrarNombre()" name = "boton1" id ="boton1" hidden=true>GENERAR CODIGO</button>
+                </div>
+                <h3>Nombre del archivo:</h3>
+                <div id ="division">
+                <p id="resultado">NO SE HA EJECUTADO</p>
+                </div>
+                <div>
+                    <p>Numero de documentos Expedidos por Decanatura:</p>
+                    <input type="text" class="txt" name="cont1" id="cont1" disabled>
+                </div>
+                <div>
+                    <p>Numero de documentos Expedidos por Sistemas:</p>
+                    <input type="text" class="txt" name="cont2" id="cont2" disabled>
+                </div>
+                <div>
+                    <p>Numero de documentos Expedidos por Electronica:</p>
+                    <input type="text" class="txt" name="cont3" id="cont3" disabled>
+                </div>
+            </div>
+            <div class ="ayuda">
+                <br><a href="Ayuda.html" id="desc">AYUDA</a>
+            </div>
+    </body>
+
+    
+</html>
